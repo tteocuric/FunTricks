@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="voY-BH-HBw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wF4-Fw-grf">
+            <objects>
+                <viewController id="f2f-Yw-znM" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="INe-RG-7gh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aah-Qe-8FR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fNo-uV-lVB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCR-ea-g9Z">
+                                <rect key="frame" x="16" y="13" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="DwL-7I-SEA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="bhb-yt-Ubv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="rgo-HF-6B6"/>
+                                    <constraint firstAttribute="height" constant="30" id="xCT-qh-xBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BRi-jw-tlz" kind="modal" id="DFB-b0-m9h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5C-Vx-79K">
+                                <rect key="frame" x="53" y="444" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="SOP-Ij-Tp2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="Tn1-2s-nW6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="vWn-ts-JXs"/>
+                                    <constraint firstAttribute="width" constant="214" id="vwd-7J-HTs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.20000000000000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <nil key="value"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="easyManualTrick" destination="f2f-Yw-znM" eventType="touchUpInside" id="oJA-LU-DkJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18e-gi-dmd">
+                                <rect key="frame" x="7" y="72" width="307" height="100"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.65098039215686276" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="18e-gi-dmd" secondAttribute="centerX" id="Gwy-GV-tjr"/>
+                            <constraint firstAttribute="centerX" secondItem="N5C-Vx-79K" secondAttribute="centerX" id="Wk7-eM-KjX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EasyManualTrickLabel" destination="18e-gi-dmd" id="F4g-qO-zKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFs-T7-Dmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="-1281"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ic6-mI-Bdk">
+            <objects>
+                <viewController id="7Xa-Df-4dA" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s44-IG-Oha"/>
+                        <viewControllerLayoutGuide type="bottom" id="NIZ-IV-hYM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uQ7-xt-yMm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6S-Hy-02q">
+                                <rect key="frame" x="16" y="14" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="4Lz-bj-36e"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="TIA-BQ-ALt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="oxX-ow-ME5"/>
+                                    <constraint firstAttribute="height" constant="30" id="yK3-bg-olz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BRi-jw-tlz" kind="modal" id="C7r-MV-cbc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3q-zs-xpc">
+                                <rect key="frame" x="53" y="445" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="P17-iA-CGl"/>
+                                    <constraint firstAttribute="width" constant="214" id="f1M-XL-eJM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.20000000000000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <nil key="value"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="hardManualTrick" destination="7Xa-Df-4dA" eventType="touchUpInside" id="Ufo-i8-wUh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcy-76-NAD">
+                                <rect key="frame" x="8" y="75" width="305" height="100"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.65098039215686276" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="r3q-zs-xpc" secondAttribute="centerX" id="CeN-0W-YKk"/>
+                            <constraint firstAttribute="centerX" secondItem="Jcy-76-NAD" secondAttribute="centerX" id="zFc-k9-aGe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HardManualTrickLabel" destination="Jcy-76-NAD" id="9pS-1o-clC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2am-EQ-Egi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="-1281"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dK9-BI-YoC">
+            <objects>
+                <viewController id="BRi-jw-tlz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bce-o3-ZRr"/>
+                        <viewControllerLayoutGuide type="bottom" id="alb-tF-chw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MXa-D0-bmR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4H-DY-cCM">
+                                <rect key="frame" x="53" y="365" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="3uU-C8-xYP"/>
+                                    <constraint firstAttribute="width" constant="214" id="vNe-Fb-A2s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Intermediate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f2f-Yw-znM" kind="modal" id="xUJ-La-adm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dI-J2-W1j">
+                                <rect key="frame" x="53" y="471" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="PUB-mz-k5E"/>
+                                    <constraint firstAttribute="width" constant="214" id="ccm-ZS-tdL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.1058823529" green="0.23137254900000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Advanced">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Xa-Df-4dA" kind="modal" id="b5h-Iq-ydd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-5J-GDO">
+                                <rect key="frame" x="16" y="11" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Jyr-AQ-eDA"/>
+                                    <constraint firstAttribute="height" constant="30" id="Pn1-NY-8LX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="m3N-4f-n7j"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="oY7-w8-nFh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="voY-BH-HBw" kind="modal" id="go8-JP-uTH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.25098039215686274" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="alb-tF-chw" firstAttribute="top" secondItem="j4H-DY-cCM" secondAttribute="bottom" constant="152" id="15S-zY-O6G"/>
+                            <constraint firstAttribute="centerX" secondItem="j4H-DY-cCM" secondAttribute="centerX" id="IT7-sN-gG2"/>
+                            <constraint firstAttribute="centerX" secondItem="1dI-J2-W1j" secondAttribute="centerX" id="PFY-E4-nhX"/>
+                            <constraint firstItem="alb-tF-chw" firstAttribute="top" secondItem="1dI-J2-W1j" secondAttribute="bottom" constant="46" id="t4A-kU-aB1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFV-f5-m6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-424" y="-556"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JYs-Hj-dOD">
+            <objects>
+                <viewController id="voY-BH-HBw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ntu-Rq-CBM"/>
+                        <viewControllerLayoutGuide type="bottom" id="9fJ-ng-uJa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yof-7d-uDs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLO-5Y-57c">
+                                <rect key="frame" x="40" y="196" width="240" height="99"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="pCk-yj-wIy"/>
+                                    <constraint firstAttribute="height" constant="99" id="vmm-QN-lFC"/>
+                                </constraints>
+                                <state key="normal" title="Rails">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="clF-eG-H7G" kind="modal" id="Hcg-V7-JmY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5y-xJ-8j9">
+                                <rect key="frame" x="40" y="410" width="240" height="99"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="D1l-OI-BUh"/>
+                                    <constraint firstAttribute="height" constant="99" id="KSq-HU-Jcp"/>
+                                </constraints>
+                                <state key="normal" title="Manual">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BRi-jw-tlz" kind="modal" id="xYO-hS-OZG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB9-6O-So4">
+                                <rect key="frame" x="40" y="89" width="240" height="99"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="0jc-ci-egR"/>
+                                    <constraint firstAttribute="width" constant="240" id="QV9-gs-4j4"/>
+                                </constraints>
+                                <state key="normal" title="Flatground">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="hl7-o4-wBj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsG-2F-uVg">
+                                <rect key="frame" x="40" y="303" width="240" height="99"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="PAn-r9-P4J"/>
+                                    <constraint firstAttribute="width" constant="240" id="gJC-mr-wsk"/>
+                                </constraints>
+                                <state key="normal" title="Gaps">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Bna-Kh-MCQ" kind="modal" id="GSd-DZ-W5c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20737077104136867" green="0.20323102138343713" blue="0.21152584171957445" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9fJ-ng-uJa" firstAttribute="top" secondItem="b5y-xJ-8j9" secondAttribute="bottom" constant="59" id="Co5-El-6T4"/>
+                            <constraint firstAttribute="centerX" secondItem="SB9-6O-So4" secondAttribute="centerX" id="HX7-ve-xre"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SB9-6O-So4" secondAttribute="trailing" constant="24" id="Hxn-ZX-8x5"/>
+                            <constraint firstAttribute="centerX" secondItem="WsG-2F-uVg" secondAttribute="centerX" id="Jfz-YF-FxS"/>
+                            <constraint firstAttribute="centerX" secondItem="oLO-5Y-57c" secondAttribute="centerX" id="alb-wG-fa1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WsG-2F-uVg" secondAttribute="trailing" constant="24" id="fx5-b1-6OI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b5y-xJ-8j9" secondAttribute="trailing" constant="24" id="p4V-AF-qzt"/>
+                            <constraint firstAttribute="centerX" secondItem="b5y-xJ-8j9" secondAttribute="centerX" id="uTf-bJ-OAh"/>
+                            <constraint firstItem="9fJ-ng-uJa" firstAttribute="top" secondItem="WsG-2F-uVg" secondAttribute="bottom" constant="166" id="uU3-VL-Bgy"/>
+                            <constraint firstItem="9fJ-ng-uJa" firstAttribute="top" secondItem="oLO-5Y-57c" secondAttribute="bottom" constant="273" id="ufb-lS-vt9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oLO-5Y-57c" secondAttribute="trailing" constant="24" id="wAn-gD-QLv"/>
+                            <constraint firstItem="9fJ-ng-uJa" firstAttribute="top" secondItem="SB9-6O-So4" secondAttribute="bottom" constant="380" id="yw1-PV-xt5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ct-qE-ZU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-421" y="172"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLE-aX-wSl">
+                                <rect key="frame" x="53" y="351" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.24705882352941178" green="0.3843137254901961" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="TY6-3E-4Iq"/>
+                                    <constraint firstAttribute="width" constant="214" id="qo5-ki-Se1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.050980392156862744" green="0.16078431372549021" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Intermediate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rzN-yY-i5j" kind="modal" id="88b-QY-7g8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfQ-aC-cFZ">
+                                <rect key="frame" x="53" y="457" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.24705882352941178" green="0.3843137254901961" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="H0s-Ge-5VD"/>
+                                    <constraint firstAttribute="height" constant="51" id="i2l-eP-5nV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.10588235294117647" green="0.23137254901960785" blue="0.35294117647058826" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Advanced">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9JS-iV-iXr" kind="modal" id="Dr5-aC-61M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-72-89s">
+                                <rect key="frame" x="16" y="13" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="7gf-mq-bv1"/>
+                                    <constraint firstAttribute="height" constant="30" id="OZ5-7Z-HKb"/>
+                                    <constraint firstAttribute="width" constant="46" id="eZz-98-YLD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="fa0-Kg-Hmp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="voY-BH-HBw" kind="modal" id="Eeo-Le-3Q5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.25098039215686274" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ybT-72-89s" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="0Ky-ql-pjP"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GfQ-aC-cFZ" secondAttribute="bottom" constant="60" id="1Aj-Ea-QTN"/>
+                            <constraint firstItem="GfQ-aC-cFZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="37" id="3hj-31-N3H"/>
+                            <constraint firstItem="ybT-72-89s" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-7" id="OOq-Gb-AYR"/>
+                            <constraint firstAttribute="centerX" secondItem="GfQ-aC-cFZ" secondAttribute="centerX" id="WT1-RZ-o0F"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="FLE-aX-wSl" secondAttribute="bottom" constant="166" id="hb0-rJ-bF7"/>
+                            <constraint firstItem="FLE-aX-wSl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="37" id="qsB-jD-GJN"/>
+                            <constraint firstAttribute="centerX" secondItem="FLE-aX-wSl" secondAttribute="centerX" id="uc9-Bk-UV7"/>
+                            <constraint firstItem="ybT-72-89s" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-7" id="y3B-Dm-ikV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o1L-FW-HSM"/>
+                    <connections>
+                        <outlet property="view" destination="kh9-bI-dsS" id="yOg-tG-fe3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="172"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="roM-lk-Sxe">
+            <objects>
+                <viewController id="kd8-zo-ebj" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bnp-13-fI6"/>
+                        <viewControllerLayoutGuide type="bottom" id="YGC-ew-H6h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5iO-fQ-vSD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KB-fg-PhH">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="0bC-MP-Fd5"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kbt-oQ-15p"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="Lbf-zT-eCC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="tCo-im-kas"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="clF-eG-H7G" kind="modal" id="MGh-Nb-pWX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D02-tk-D6y">
+                                <rect key="frame" x="16" y="81" width="288" height="100"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-Cn-hmf">
+                                <rect key="frame" x="53" y="451" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="kLK-Mb-lbm"/>
+                                    <constraint firstAttribute="width" constant="214" id="w47-R5-UUz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.20000000000000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <nil key="value"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="easyGrinTrick" destination="kd8-zo-ebj" eventType="touchUpInside" id="ZXD-jq-6tO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.65098039215686276" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HWZ-Cn-hmf" secondAttribute="centerX" id="7kK-0K-NUj"/>
+                            <constraint firstAttribute="centerX" secondItem="D02-tk-D6y" secondAttribute="centerX" id="Ulj-sh-S7K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EasyGrindTrickLabel" destination="D02-tk-D6y" id="OwM-H6-XeP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyK-G9-cib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1382" y="-249"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uCC-KL-oXm">
+            <objects>
+                <viewController id="Fcp-Hk-z7C" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K9g-ak-oU7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nqw-ZA-rMF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xj5-20-jGf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwo-Hh-ETU">
+                                <rect key="frame" x="16" y="15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GDO-uS-asY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="PT9-9G-hsX"/>
+                                    <constraint firstAttribute="width" constant="46" id="W3k-ou-6oP"/>
+                                    <constraint firstAttribute="height" constant="30" id="j5Z-z3-gmo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="clF-eG-H7G" kind="modal" id="WoK-xO-RKQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd2-Gl-1Di">
+                                <rect key="frame" x="8" y="72" width="305" height="100"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIE-ir-IV3">
+                                <rect key="frame" x="53" y="446" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="8wi-nW-blu"/>
+                                    <constraint firstAttribute="width" constant="214" id="mnl-bh-uXT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.20000000000000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <nil key="value"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="hardGrindTrick" destination="Fcp-Hk-z7C" eventType="touchUpInside" id="q1j-Oc-uF1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.65098039215686276" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="TIE-ir-IV3" secondAttribute="centerX" id="X3V-So-0h6"/>
+                            <constraint firstAttribute="centerX" secondItem="Sd2-Gl-1Di" secondAttribute="centerX" id="ikB-uK-pdI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HardGrindTrickLabel" destination="Sd2-Gl-1Di" id="vi8-eA-KDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rHl-Bn-R0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1382" y="644"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2LY-0z-gMp">
+            <objects>
+                <viewController id="clF-eG-H7G" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M44-ec-ReS"/>
+                        <viewControllerLayoutGuide type="bottom" id="IJT-zf-zdb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bX4-1R-NUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VM-e7-2wB">
+                                <rect key="frame" x="53" y="354" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="chQ-oo-SCS"/>
+                                    <constraint firstAttribute="height" constant="51" id="ywb-sV-ZfD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Intermediate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kd8-zo-ebj" kind="modal" id="MMv-Jm-vDp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQZ-Lm-0oJ">
+                                <rect key="frame" x="16" y="12" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GSx-GN-u4g"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="JmS-Nh-M30"/>
+                                    <constraint firstAttribute="height" constant="30" id="ebI-Im-Q8T"/>
+                                    <constraint firstAttribute="width" constant="46" id="nfQ-zI-W8l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="voY-BH-HBw" kind="modal" id="tXn-dd-4bm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gO-RV-gEs">
+                                <rect key="frame" x="53" y="460" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="ajR-3d-2xK"/>
+                                    <constraint firstAttribute="height" constant="51" id="xKN-3q-S75"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.1058823529" green="0.23137254900000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Advanced">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fcp-Hk-z7C" kind="modal" id="S29-t3-vaE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.25098039215686274" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IJT-zf-zdb" firstAttribute="top" secondItem="3VM-e7-2wB" secondAttribute="bottom" constant="163" id="KV6-D1-DjP"/>
+                            <constraint firstItem="IJT-zf-zdb" firstAttribute="top" secondItem="4gO-RV-gEs" secondAttribute="bottom" constant="57" id="OgL-st-YrR"/>
+                            <constraint firstAttribute="centerX" secondItem="3VM-e7-2wB" secondAttribute="centerX" id="kgZ-EP-6Jv"/>
+                            <constraint firstAttribute="centerX" secondItem="4gO-RV-gEs" secondAttribute="centerX" id="xlg-ds-Iod"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GI2-9G-alH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-941" y="172"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CpK-9Q-fqG">
+            <objects>
+                <viewController id="Bna-Kh-MCQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u7Q-yI-yek"/>
+                        <viewControllerLayoutGuide type="bottom" id="dvN-sQ-aNI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="435-22-4ic">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imf-8z-q15">
+                                <rect key="frame" x="53" y="365" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Yl1-af-R1e"/>
+                                    <constraint firstAttribute="width" constant="214" id="nXE-Ib-8rL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Intermediate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mzi-qO-RZC" kind="modal" id="aTQ-dX-q75"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POm-uT-otS">
+                                <rect key="frame" x="16" y="11" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="3OZ-C5-7vG"/>
+                                    <constraint firstAttribute="height" constant="30" id="Cpi-5l-db8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="XLa-dj-W5T"/>
+                                    <constraint firstAttribute="width" constant="46" id="h0U-uc-lcP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="voY-BH-HBw" kind="modal" id="kpZ-3K-9kh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D8-aB-j2M">
+                                <rect key="frame" x="53" y="471" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="LS6-mk-4iK"/>
+                                    <constraint firstAttribute="width" constant="214" id="WH0-bx-fB7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.1058823529" green="0.23137254900000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Advanced">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cev-Ti-nQq" kind="modal" id="zMb-fK-kaJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.25098039215686274" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8D8-aB-j2M" secondAttribute="trailing" constant="37" id="cJh-tK-ofu"/>
+                            <constraint firstItem="dvN-sQ-aNI" firstAttribute="top" secondItem="8D8-aB-j2M" secondAttribute="bottom" constant="46" id="j4Z-Zl-T2o"/>
+                            <constraint firstItem="dvN-sQ-aNI" firstAttribute="top" secondItem="imf-8z-q15" secondAttribute="bottom" constant="152" id="jDq-FB-dyb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="imf-8z-q15" secondAttribute="trailing" constant="37" id="ojF-hr-8i3"/>
+                            <constraint firstAttribute="centerX" secondItem="8D8-aB-j2M" secondAttribute="centerX" id="tgp-lW-mnc"/>
+                            <constraint firstAttribute="centerX" secondItem="imf-8z-q15" secondAttribute="centerX" id="y0U-SX-qS7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AN2-DM-H4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-424" y="917"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rpz-pV-Id3">
+            <objects>
+                <viewController id="Mzi-qO-RZC" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2BC-bp-SY2"/>
+                        <viewControllerLayoutGuide type="bottom" id="qC7-35-GAL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q0O-jl-OdB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1b-va-G8g">
+                                <rect key="frame" x="16" y="14" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2ra-zN-deF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="BTh-rM-gkf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="IIb-SF-gxe"/>
+                                    <constraint firstAttribute="width" constant="46" id="xFT-lE-RJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bna-Kh-MCQ" kind="modal" id="ldl-zW-pVK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWN-2O-9iu">
+                                <rect key="frame" x="35" y="75" width="250" height="100"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en4-6H-5t1">
+                                <rect key="frame" x="53" y="445" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="cjG-Ic-ngU"/>
+                                    <constraint firstAttribute="height" constant="51" id="tb0-0w-K9z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.20000000000000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <nil key="value"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showGapETrick" destination="Mzi-qO-RZC" eventType="touchUpInside" id="HFA-tw-0pL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60632094945789472" green="0.649097007263158" blue="0.45861713106157892" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="pWN-2O-9iu" secondAttribute="centerX" id="vKW-JN-iDe"/>
+                            <constraint firstAttribute="centerX" secondItem="en4-6H-5t1" secondAttribute="centerX" id="vbb-2C-ohH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="funGapETrickLabel" destination="pWN-2O-9iu" id="OXC-eh-Bhk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8r-yS-5Sr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="1679"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Fo-wC-GBP">
+            <objects>
+                <viewController id="Cev-Ti-nQq" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RSJ-kh-4pM"/>
+                        <viewControllerLayoutGuide type="bottom" id="K9i-Xn-MYj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O9T-A3-JVg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9p-AD-abn">
+                                <rect key="frame" x="16" y="13" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.38431372549999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="Eie-i1-9nK"/>
+                                    <constraint firstAttribute="width" constant="46" id="FTR-k1-biw"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="NoC-N3-4SN"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="46" id="UeD-sV-WBe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hPV-ke-rTP"/>
+                                    <constraint firstAttribute="height" constant="30" id="yBy-fs-Qj2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392159999999" green="0.16078431369999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bna-Kh-MCQ" kind="modal" id="xFL-OC-nc0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLH-yq-NTA">
+                                <rect key="frame" x="35" y="74" width="250" height="100"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="4mE-dm-wTj"/>
+                                    <constraint firstAttribute="height" constant="100" id="wNb-eN-blp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.1764705882" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko2-du-4JZ">
+                                <rect key="frame" x="53" y="444" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="9e9-Uv-hRy"/>
+                                    <constraint firstAttribute="width" constant="214" id="Ahn-AR-Jos"/>
+                                    <constraint firstAttribute="height" constant="51" id="EUq-1x-b0W"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="XLT-4h-AvT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.20000000000000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <nil key="value"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showGapHTrick" destination="Cev-Ti-nQq" eventType="touchUpInside" id="XVO-36-zTy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.65098039215686276" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K9i-Xn-MYj" firstAttribute="top" secondItem="KLH-yq-NTA" secondAttribute="bottom" constant="394" id="Cxo-Si-CFg"/>
+                            <constraint firstItem="B9p-AD-abn" firstAttribute="leading" secondItem="O9T-A3-JVg" secondAttribute="leadingMargin" id="O9c-Zd-EpI"/>
+                            <constraint firstAttribute="centerX" secondItem="KLH-yq-NTA" secondAttribute="centerX" id="QlL-zE-Bxl"/>
+                            <constraint firstItem="KLH-yq-NTA" firstAttribute="leading" secondItem="O9T-A3-JVg" secondAttribute="leadingMargin" constant="19" id="iVn-j0-OV3"/>
+                            <constraint firstAttribute="centerX" secondItem="ko2-du-4JZ" secondAttribute="centerX" id="l0R-LB-XlA"/>
+                            <constraint firstItem="B9p-AD-abn" firstAttribute="top" secondItem="RSJ-kh-4pM" secondAttribute="bottom" constant="-7" id="tgE-De-kmH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="funGapHTrickLabel" destination="KLH-yq-NTA" id="gUd-TG-wdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSf-34-4vy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="1679"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="odr-sX-Q1O">
+            <objects>
+                <viewController id="rzN-yY-i5j" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="knG-HG-Miz"/>
+                        <viewControllerLayoutGuide type="bottom" id="zSH-QV-UPz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bLM-yo-ibP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.34999999999999964" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iny-Ov-2Me">
+                                <rect key="frame" x="16" y="11" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.24705882352941178" green="0.3843137254901961" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="25T-L4-BF6"/>
+                                    <constraint firstAttribute="width" constant="46" id="RHg-iZ-JgH"/>
+                                    <constraint firstAttribute="height" constant="30" id="q8e-gv-Xhz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="tb6-Qx-ciw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392156862744" green="0.16078431372549021" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="omW-rn-LNr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2L-dd-9HO">
+                                <rect key="frame" x="35" y="72" width="250" height="100"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.46274509800000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.074509803921568626" green="0.17647058823529413" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="MVI-Ng-dUl"/>
+                                    <constraint firstAttribute="height" constant="100" id="nyE-Dt-R1X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                <color key="textColor" red="0.074509803921568626" green="0.17647058823529413" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.34999999999999964" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGl-jn-h7K">
+                                <rect key="frame" x="53" y="442" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.30980392156862746" green="0.46274509803921571" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="IZF-9i-A4t"/>
+                                    <constraint firstAttribute="height" constant="51" id="j4K-F5-tSh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.20000000000000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <nil key="value"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showEFunTrick" destination="rzN-yY-i5j" eventType="touchUpInside" id="aqc-gc-RFX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.65098039215686276" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ZGl-jn-h7K" secondAttribute="centerX" id="JLI-hH-Xg5"/>
+                            <constraint firstItem="zSH-QV-UPz" firstAttribute="top" secondItem="ZGl-jn-h7K" secondAttribute="bottom" constant="75" id="MGf-Yx-kFc"/>
+                            <constraint firstItem="D2L-dd-9HO" firstAttribute="top" secondItem="knG-HG-Miz" secondAttribute="bottom" constant="52" id="aKt-Tc-29L"/>
+                            <constraint firstItem="Iny-Ov-2Me" firstAttribute="leading" secondItem="bLM-yo-ibP" secondAttribute="leadingMargin" id="kF0-7v-bvn"/>
+                            <constraint firstItem="Iny-Ov-2Me" firstAttribute="leading" secondItem="bLM-yo-ibP" secondAttribute="leadingMargin" id="nze-x4-OzA"/>
+                            <constraint firstAttribute="centerX" secondItem="D2L-dd-9HO" secondAttribute="centerX" id="ukO-3H-dt9"/>
+                            <constraint firstItem="D2L-dd-9HO" firstAttribute="leading" secondItem="bLM-yo-ibP" secondAttribute="leadingMargin" constant="19" id="xdG-yd-oBJ"/>
+                            <constraint firstItem="Iny-Ov-2Me" firstAttribute="top" secondItem="knG-HG-Miz" secondAttribute="bottom" constant="-9" id="xm6-Sv-LVC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dpg-fv-rAZ"/>
+                    <connections>
+                        <outlet property="funTrickLabel" destination="D2L-dd-9HO" id="K0I-V1-t3z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ln-Ae-SMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="504"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w6z-gi-jEV">
+            <objects>
+                <viewController id="9JS-iV-iXr" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lqu-bD-6V4"/>
+                        <viewControllerLayoutGuide type="bottom" id="8io-6W-H3W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2iv-d0-vls">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1et-50-tA8">
+                                <rect key="frame" x="35" y="77" width="250" height="100"/>
+                                <color key="backgroundColor" red="0.30980392156862746" green="0.46274509803921571" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ba0-2g-Vzb"/>
+                                    <constraint firstAttribute="width" constant="250" id="E7y-MN-UMk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.34999999999999964" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhF-N1-qdI">
+                                <rect key="frame" x="16" y="10" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.24705882352941178" green="0.3843137254901961" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="YyO-e1-6Y8"/>
+                                    <constraint firstAttribute="height" constant="30" id="oNR-Tr-0dL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                                <color key="tintColor" red="0.050980392156862744" green="0.16078431372549021" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="1R4-SW-XpX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.34999999999999964" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N8-M4-lfG">
+                                <rect key="frame" x="53" y="442" width="214" height="51"/>
+                                <color key="backgroundColor" red="0.30980392156862746" green="0.46274509803921571" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="ISm-BB-yBQ"/>
+                                    <constraint firstAttribute="width" constant="214" id="enI-IT-Qxc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.20000000000000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFunTrick" destination="9JS-iV-iXr" eventType="touchUpInside" id="lq0-X2-ngg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313729999995" green="0.65098039220000004" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1et-50-tA8" firstAttribute="leading" secondItem="2iv-d0-vls" secondAttribute="leadingMargin" constant="19" id="0el-CO-gTp"/>
+                            <constraint firstItem="uhF-N1-qdI" firstAttribute="leading" secondItem="2iv-d0-vls" secondAttribute="leadingMargin" id="6M5-d1-WCc"/>
+                            <constraint firstItem="uhF-N1-qdI" firstAttribute="top" secondItem="lqu-bD-6V4" secondAttribute="bottom" constant="-10" id="9df-Ig-drf"/>
+                            <constraint firstAttribute="centerX" secondItem="1N8-M4-lfG" secondAttribute="centerX" id="Pqg-DC-7Oi"/>
+                            <constraint firstItem="1et-50-tA8" firstAttribute="top" secondItem="lqu-bD-6V4" secondAttribute="bottom" constant="57" id="X5d-Qi-kJO"/>
+                            <constraint firstAttribute="centerX" secondItem="1et-50-tA8" secondAttribute="centerX" id="YJB-cD-5WE"/>
+                            <constraint firstItem="1N8-M4-lfG" firstAttribute="leading" secondItem="2iv-d0-vls" secondAttribute="leadingMargin" constant="37" id="guU-JA-zwj"/>
+                            <constraint firstAttribute="centerX" secondItem="1et-50-tA8" secondAttribute="centerX" id="i40-Zi-u8f"/>
+                            <constraint firstItem="uhF-N1-qdI" firstAttribute="leading" secondItem="2iv-d0-vls" secondAttribute="leadingMargin" id="nDZ-zP-fIe"/>
+                            <constraint firstAttribute="centerX" secondItem="1et-50-tA8" secondAttribute="centerX" id="osS-VV-1JN"/>
+                            <constraint firstItem="8io-6W-H3W" firstAttribute="top" secondItem="1N8-M4-lfG" secondAttribute="bottom" constant="75" id="pjt-S9-EqI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HCb-lA-V3z"/>
+                    <connections>
+                        <outlet property="funhTrickLabel" destination="1et-50-tA8" id="Eos-aR-7Ad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pw-8Q-nIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="-264"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="DFB-b0-m9h"/>
+        <segue reference="MGh-Nb-pWX"/>
+        <segue reference="1R4-SW-XpX"/>
+        <segue reference="Eeo-Le-3Q5"/>
+        <segue reference="ldl-zW-pVK"/>
+    </inferredMetricsTieBreakers>
+</document>
