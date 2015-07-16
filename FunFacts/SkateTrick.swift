@@ -85,7 +85,7 @@ class SkateTrick {
 }
 
 class RailSkateTrick: SkateTrick {
-    init(easy) {
+    override init(easy:Bool) {
         
         if easy {
         
@@ -168,7 +168,9 @@ class RailSkateTrick: SkateTrick {
 }
 
 class ManualSkateTrick: SkateTrick {
-    init(easy) {
+    
+    
+    override init(easy:Bool) {
         if easy {
             self.sideArray = ["Fs",
                               "Bs",
@@ -192,7 +194,6 @@ class ManualSkateTrick: SkateTrick {
                              " ",
                              " ",
                              " " ]
-            super.init(easy)
 
         }
         else {
@@ -217,9 +218,9 @@ class ManualSkateTrick: SkateTrick {
                              "Inward heelflip",
                              "Bigspin"
                              ]
-            super.init()
  
         }
+        super.init(easy:easy)
     }
 
     override func randomTrick() -> String {
@@ -231,6 +232,7 @@ class ManualSkateTrick: SkateTrick {
         
         return self.stanceArray[Int(randomstance)] + " " + self.sideArray[Int(randomside)] + " " + self.inTricks[Int(randomintrick)] + " " + self.grind[Int(randomegrind)] + " " + self.outtrick[Int(randomtrick)]
     }
+    
 }
 
 
